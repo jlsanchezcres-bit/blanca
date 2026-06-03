@@ -1,42 +1,300 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>blanca nails</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="app">
+    <!-- SPLASH -->
+    <section id="logo-screen" class="screen active">
+        <img
+            src="images/plantillas/plantilla_logo.PNG"
+            class="background"
+            alt=""
+        >
+    </section>
 
-    <div class="logo-wrapper">
-        <img src="logo.JPEG" class="logo">
+    <!-- HOME -->
+    <section id="home-screen" class="screen">
+
+        <img
+            src="images/plantillas/plantilla_explicativa.JPG"
+            class="background"
+            alt=""
+        >
+
+        <div class="buttons-home">
+            <button id="design-btn">
+                Diseña tus uñas
+            </button>
+
+            <button id="gallery-btn">
+                Inspiración
+            </button>
+        </div>
+
+    </section>
+
+    <!-- INSPIRACIÓN -->
+<section id="gallery-screen" class="screen">
+
+    <img
+        src="images/plantillas/plantilla_principal.PNG"
+        class="background"
+        alt=""
+    >
+
+    <div class="gallery-title">
+        INSPIRACIÓN
     </div>
 
-    <div id="content">
+    <div class="gallery-container">
 
-        <div id="homeScreen">
+        <img src="images/inspiracion/insp_1.PNG" class="gallery-img">
+        <img src="images/inspiracion/insp_2.PNG" class="gallery-img">
+        <img src="images/inspiracion/insp_3.PNG" class="gallery-img">
+        <img src="images/inspiracion/insp_4.PNG" class="gallery-img">
 
-            <h1 class="welcome-title">
-                Diseña tus uñas
+        <img src="images/inspiracion/insp_5.jpg" class="gallery-img">
+        <img src="images/inspiracion/insp_6.jpg" class="gallery-img">
+        <img src="images/inspiracion/insp_7.jpg" class="gallery-img">
+        <img src="images/inspiracion/insp_8.jpg" class="gallery-img">
+
+        <img src="images/inspiracion/insp_9.PNG" class="gallery-img">
+        <img src="images/inspiracion/insp_10.PNG" class="gallery-img">
+        <img src="images/inspiracion/insp_11.PNG" class="gallery-img">
+        <img src="images/inspiracion/insp_12.PNG" class="gallery-img">
+
+        <img src="images/inspiracion/insp_13.PNG" class="gallery-img">
+        <img src="images/inspiracion/insp_14.PNG" class="gallery-img">
+        <img src="images/inspiracion/insp_15.PNG" class="gallery-img">
+        <img src="images/inspiracion/insp_16.PNG" class="gallery-img">
+        <img src="images/inspiracion/insp_17.PNG" class="gallery-img">
+        <img src="images/inspiracion/insp_18.PNG" class="gallery-img">
+
+    </div>
+
+    <img
+        src="images/emoticono/emoticono_volver.png"
+        id="gallery-back-button"
+        class="shape-back-button"
+        alt=""
+    >
+
+</section>
+
+    <!-- DISEÑO -->
+    <section id="design-screen" class="screen">
+
+        <img
+            id="template-img"
+            src="images/plantillas/plantilla_principal.PNG"
+            class="background"
+            alt=""
+        >
+
+        <!-- TITULO -->
+        <div class="title-box" id="title-box">
+            <h1>
+                Elige la forma
+                <br>
+                de tus uñas
             </h1>
+        </div>
 
-            <button
-                class="main-btn"
-                onclick="startDesigner()"
-            >
-                Diseña tus uñas ✨
-            </button>
+        <!-- CUADRO TEXTO DISEÑO -->
+        <div id="custom-box" class="custom-box">
+
+            <div class="custom-input-wrapper">
+
+                <div
+                    id="custom-label"
+                    class="custom-label"
+                >
+                    Escribe el color o acabado
+                </div>
+
+                <div
+                    id="custom-example"
+                    class="custom-example"
+                >
+                    Ej: nude rosita, blanco leche ✨
+                </div>
+
+                <textarea
+                    id="custom-input"
+                ></textarea>
+
+            </div>
 
         </div>
 
-    </div>
+        <!-- MANO -->
+        <img
+            id="main-hand"
+            src="images/manos/forma/mano_forma_principal.PNG"
+            class="main-hand"
+            alt=""
+        >
 
-</div>
+        <!-- BOTONES FORMA -->
+        <div class="shape-buttons" id="shape-buttons">
 
-<script src="script.js"></script>
+            <img src="images/emoticono/forma/emoticono_normal.PNG" class="shape-icon" data-shape="normal">
+            <img src="images/emoticono/forma/emoticono_ovalada.PNG" class="shape-icon" data-shape="ovalada">
+            <img src="images/emoticono/forma/emoticono_almendra.PNG" class="shape-icon" data-shape="almendra">
+            <img src="images/emoticono/forma/emoticono_cuadrada.PNG" class="shape-icon" data-shape="cuadrada">
+            <img src="images/emoticono/forma/emoticono_ballerina.PNG" class="shape-icon" data-shape="ballerina">
+            <img src="images/emoticono/forma/emoticono_stiletto.PNG" class="shape-icon" data-shape="stiletto">
+
+        </div>
+
+        <img
+            src="images/emoticono/emoticono_volver.png"
+            id="home-back-button"
+            class="shape-back-button"
+            alt=""
+        >
+
+        <!-- BOTONES DISEÑO -->
+        <div id="design-buttons" class="design-buttons">
+
+            <img src="images/emoticono/diseno/emoticono_colorplano.PNG" class="design-icon" data-design="colorplano">
+            <img src="images/emoticono/diseno/emoticono_francesa.PNG" class="design-icon" data-design="francesa">
+            <img src="images/emoticono/diseno/emoticono_glitter.PNG" class="design-icon" data-design="glitter">
+            <img src="images/emoticono/diseno/emoticono_degradado.PNG" class="design-icon" data-design="degradado">
+            <img src="images/emoticono/diseno/emoticono_nailart.PNG" class="design-icon" data-design="nailart">
+
+        </div>
+
+        <!-- BOTONES FINALES DISEÑO -->
+        <div id="final-buttons" class="final-buttons">
+
+            <img
+                src="images/emoticono/emoticono_siguiente.png"
+                id="next-button"
+                alt=""
+            >
+
+            <img
+                src="images/emoticono/emoticono_volver.png"
+                id="back-button"
+                alt=""
+            >
+
+        </div>
+
+    </section>
+
+    <!-- SOLICITAR CITA -->
+    <section id="appointment-screen" class="screen">
+
+        <img
+            src="images/plantillas/plantilla_principal.PNG"
+            class="background"
+            alt=""
+        >
+
+        <div class="appointment-content">
+
+            <h1 class="appointment-title">
+                SOLICITAR CITA
+            </h1>
+
+            <p class="appointment-text">
+                Solicitar una cita no implica que sea aceptada,
+                Blanca te confirmará la disponibilidad lo antes posible!! 🚀
+            </p>
+
+            <input
+                type="text"
+                id="client-name"
+                class="appointment-input"
+                placeholder="Tu nombre"
+            >
+
+            <h2 class="appointment-subtitle">
+                Elige el día 🗓️
+            </h2>
+
+            <input
+                type="date"
+                id="appointment-date"
+                class="appointment-input"
+            >
+
+            <h2 class="appointment-subtitle hour-title">
+                Elige la hora ⏰
+            </h2>
+
+            <select
+                id="appointment-hour"
+                class="appointment-input"
+            >
+                <option value="">Selecciona una hora</option>
+                <option>10:00</option>
+                <option>10:30</option>
+                <option>11:00</option>
+                <option>11:30</option>
+                <option>12:00</option>
+                <option>12:30</option>
+                <option>13:00</option>
+                <option>13:30</option>
+                <option>16:00</option>
+                <option>16:30</option>
+                <option>17:00</option>
+                <option>17:30</option>
+                <option>18:00</option>
+                <option>18:30</option>
+                <option>19:00</option>
+                <option>19:30</option>
+                <option>20:00</option>
+            </select>
+
+            <div class="appointment-summary">
+
+                <div class="summary-title">
+                    Resumen de tu diseño ✨
+                </div>
+
+                <div id="summary-content">
+                    Forma: —
+                    <br>
+                    Diseño: —
+                    <br>
+                    Detalle: —
+                </div>
+
+            </div>
+
+            <button
+                id="whatsapp-button"
+                class="whatsapp-button"
+            >
+                Blanca déjame las uñas bonitass 🫦💅🏻
+            </button>
+
+            <div class="final-hint">
+            ↑ Dale al botón para finalizar el proceso
+            </div>
+
+        </div>
+
+        <img
+            src="images/emoticono/emoticono_volver.png"
+            id="appointment-back"
+            class="shape-back-button appointment-back-button"
+            alt=""
+        >
+
+    </section>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
